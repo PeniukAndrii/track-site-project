@@ -1,0 +1,132 @@
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+    <div (click)="closeBar()" [className]="'close-icon'">&#215;</div>
+    <div [className]="'left-side-bar-wrap'">
+      <div [className]="'nav-left-wrap'">
+        <ul>
+          <li>Обладнання</li>
+          <li>Блог</li>
+          <li [className]="'service-nav-dropdown-wrap'">Послуги<fa-icon [icon]="faChevronDown"></fa-icon>
+            <div>GPS моніторинг</div>
+            <div>Контроль спецтехніки</div>
+            <div>Контроль витрат пального</div>
+            <div>FreeTrack™ SentGeo</div>
+            <div>Відеомоніторинг</div>
+            <div>Для контролю персоналу</div>
+            <div>Системи управління пальним на підприємстві</div>
+            <div>FreeTrack™ Tacho</div>
+            <div>FREETRACK™ Хостинг</div>
+            <div>Монтаж GPS-обладнання</div>
+          </li>
+          <li>Окупність</li>
+          <li [className]="'service-nav-dropdown-wrap-two'" >Про компанію <fa-icon [icon]="faChevronDown"></fa-icon>
+            <div>Партнери</div>
+            <div>Наша команда</div>
+            <div>GPS Контроль пального</div>
+          </li>
+          <li>Контакти</li>
+        </ul>
+      </div>
+      <div [className]="'header-logo'">
+        <img src="https://pngimg.com/uploads/truck/truck_PNG16214.png" alt="logo-truck">
+      </div>
+    </div>
+  </ng-sidebar>
+
+  <div ng-sidebar-content>
+    <div [className]="'main-wrap'">
+      <app-header (eventEmitter)=toggleSideBarOpen($event) [opened]="opened"></app-header>
+      <div [className]="'content'">
+        <div [className]="'main-track-wrap'">
+          <div [className]="'main-track'">
+            <div [className]="'content-track-main'">
+              <div [className]="'GPS-Text-Main'">GPS МОНІТОРИНГ</div>
+              <div>
+                <div [className]="'description-GPS-Main'">FreeTrack – це система GPS моніторингу транспорту в Україні. Компанія спеціалізується на впровадженні,
+                  налаштуванні та техпідтримці супутникового моніторингу транспорту для:
+                </div>
+                <div [className]="'main-text-who'">бізнесу | держави | приватних клієнтів!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+        <div>ggggggg</div>
+      </div>
+    </div>
+  </div>
+</ng-sidebar-container>
+

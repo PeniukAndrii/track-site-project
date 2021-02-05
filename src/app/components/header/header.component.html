@@ -1,0 +1,65 @@
+<header>
+  <div [className]="'header-wrap'">
+    <div [className]="'icon-menu-wrap'">
+      <fa-icon [icon]="faBars" [className]="'fa-bars-wrap'" (click)="toggleSideBar()"></fa-icon>
+    </div>
+    <div [className]="'header-logo'">
+      <img src="https://pngimg.com/uploads/truck/truck_PNG16214.png" alt="logo-truck">
+    </div>
+    <div [className]="'nav-menu-wrap'">
+      <div [className]="'nav-item-wrap'">
+        <div [className]="'nav-item'">Обладнання</div>
+      </div>
+      <div [className]="'nav-item-wrap'">
+        <div [className]="'nav-item'">Блог</div>
+      </div>
+      <div [className]="'nav-item-wrap'" (mouseenter)="mouseEnter()" (mouseleave)="mouseEnter()">
+        <div [className]="'nav-item'">
+          <div>Послуги</div>
+          <div [className]="'arrow-icon-wrap'">
+            <fa-icon [icon]="faChevronDown"></fa-icon>
+          </div>
+        </div>
+        <div *ngIf="menuServiceOpen" [ngClass]="{'Nav-DropDown': 'true','Nav-DropDown-Style': 'true'}">
+          <div  [className]="'Nav-DropDown-Wrap'">
+            <div>GPS моніторинг</div>
+            <div>Контроль спецтехніки</div>
+            <div>Контроль витрат пального</div>
+            <div>FreeTrack™ SentGeo</div>
+            <div>Відеомоніторинг</div>
+            <div>Для контролю персоналу</div>
+            <div>Системи управління пальним на підприємстві</div>
+            <div>FreeTrack™ Tacho</div>
+            <div>FREETRACK™ Хостинг</div>
+            <div>Монтаж GPS-обладнання</div>
+          </div>
+        </div>
+      </div>
+      <div [className]="'nav-item-wrap'">
+        <div [className]="'nav-item'">Окупність</div>
+      </div>
+      <div [className]="'nav-item-wrap'" (mouseenter)="mouseEnterAbout()" (mouseleave)="mouseEnterAbout()">
+        <div [className]="'nav-item'">
+          <div>Про компанію </div>
+          <div [className]="'arrow-icon-wrap'">
+            <fa-icon [icon]="faChevronDown"></fa-icon>
+          </div>
+        </div>
+        <div *ngIf="menuAboutOpen" [ngClass]="{'Nav-DropDown-Two': 'true','Nav-DropDown-Style': 'true'}">
+          <div  [className]="'Nav-DropDown-Wrap'">
+            <div>Партнери</div>
+            <div>Наша Команда</div>
+            <div>GPS КОНТРОЛЬ ПАЛЬНОГО</div>
+          </div>
+        </div>
+      </div>
+      <div [className]="'nav-item-wrap'">
+        <div [className]="'nav-item'">Контакти</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+

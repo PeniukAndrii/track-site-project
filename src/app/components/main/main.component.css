@@ -1,0 +1,228 @@
+.content{
+  flex:1;
+  overflow-y: auto;
+}
+
+.main-wrap{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-track-wrap{
+  background-image: url("https://трансавтоцистерна.рф/uploadedFiles/images/fury_20_tonn/vs.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-track{
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  max-height: 600px;
+  padding: 100px 20px 0 30px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.content-track-main{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-around;
+}
+
+.description-GPS-Main{
+  font-size: 23px;
+  font-weight: 600;
+  width: 50%;
+  padding-bottom: 10px;
+}
+.GPS-Text-Main{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.main-text-who{
+  color: #d9d9d9;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ng-sidebar-container{
+  height: 100vh
+}
+
+.close-icon{
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+}
+
+
+::ng-deep .ng-sidebar{
+  background-color: rgba(0,0,0,1);
+  color: white;
+  width: 300px;
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 0 2.5em rgba(85,85,85, 0.5);
+  position: absolute;
+}
+
+
+
+
+.left-side-bar-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.header-logo{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo>img {
+  width: 100px;
+  height:50px;
+  opacity: 0.7;
+}
+
+ul{
+  list-style-type: none;
+  width: 100%;
+  padding-top: 50px;
+}
+
+li{
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  transform: rotate(350deg);
+  border: 1px solid #d0d0d0;
+  justify-content: center;
+  white-space: pre-wrap;
+  /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+  clip-path: polygon(7% 3%, 100% 0%, 90% 98%, 1% 100%);
+  padding: 5px;
+  height: 33px;
+  margin-bottom: 24px;
+}
+
+.nav-left-wrap{
+  width: 100%;
+  height: 80vh;
+}
+
+.service-nav-dropdown-wrap, .service-nav-dropdown-wrap-two{
+  transition: all 0.5s;
+}
+
+.service-nav-dropdown-wrap>div ,.service-nav-dropdown-wrap-two>div{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.service-nav-dropdown-wrap>div:hover,.service-nav-dropdown-wrap-two>div:hover{
+  text-decoration: underline #aeaeae;
+}
+
+.service-nav-dropdown-wrap:hover{
+  clip-path: unset;
+  transform: rotate(360deg);
+  border: none;
+  height: 300px;
+  padding: 7px;
+}
+
+.service-nav-dropdown-wrap-two:hover{
+  clip-path: unset;
+  transform: rotate(360deg);
+  border: none;
+  height: 90px;
+  padding: 7px;
+}
+
+@keyframes menuBar {
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+  .description-GPS-Main{
+    width: 80%;
+    font-size: 20px;
+  }
+  .GPS-Text-Main {
+    font-size: 50px;
+  }
+  .content-track-main{
+    width: 90%;
+  }
+  .main-text-who{
+    font-size: 16px;
+  }
+}
+@media (max-width: 603px) {
+  .main-track-wrap {
+    background-position-x: -800px;
+  }
+  .content-track-main{
+    width: 100%;
+  }
+}
+@media (max-width: 563px) {
+  .description-GPS-Main{
+    width: 100%;
+    font-size: 16px;
+  }
+  .GPS-Text-Main {
+    font-size: 30px;
+  }
+  .content-track-main{
+    height: 300px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+  }
+  .main-track-wrap {
+    background-position-x: -900px;
+  }
+}
+@media (max-width: 420px) {
+  .main-track-wrap{
+    background-position-x: -969px;
+  }
+  .nav-left-wrap{
+    height: 75vh;
+  }
+  li{
+    font-size: 16px;
+    height: 28px;
+  }
+  .service-nav-dropdown-wrap:hover{
+    height: 200px;
+  }
+  .service-nav-dropdown-wrap>div{
+    font-size: 10px;
+  }
+}
+@media (max-width: 321px) {
+  .main-track-wrap {
+    background-position-x: -1040px;
+  }
+}

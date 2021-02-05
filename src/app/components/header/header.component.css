@@ -1,0 +1,193 @@
+header {
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+}
+
+.header-wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-height: 50px;
+}
+
+
+.header-logo>img {
+  width: 100px;
+  opacity: 0.9;
+  margin-right: 62px;
+}
+
+.nav-menu-wrap {
+  display: flex;
+  white-space: nowrap;
+}
+
+.nav-item-wrap {
+  padding-right: 10px;
+  max-width: 180px;
+}
+
+.nav-item {
+  background-color: rgba(0,0,0,0.4);
+  color: #e0e0e0;
+  margin: 5px;
+  padding: 10px;
+  width: 160px;
+  height: 40px;
+  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 7px 2px 1px 1px rgba(0,0,0,0.1);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  transition: box-shadow,border, border-radius, clip-path 0.33s;
+}
+
+.nav-item.fa-icon {
+  margin-right: 100px;
+}
+
+.nav-item:hover{
+  border: 2px solid #aeaeae;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  /*clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);*/
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+  border-radius: 2px;
+}
+
+.arrow-icon-wrap {
+  margin-left: 5px;
+}
+
+.nav-item-menu{
+  background-color: red;
+  width: 100px;
+  position: absolute;
+}
+
+.icon-menu-wrap{
+  display: none;
+}
+
+.fa-bars-wrap{
+  font-size: 30px;
+  color: #e9e9e9;
+  cursor: pointer;
+  animation: all 2s;
+}
+
+.Nav-DropDown-Style{
+  background-color: rgba(21, 21, 21, 1);
+  color: #d4d4d4;
+  width: 100%;
+  height:0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  white-space: pre-line;
+  flex-wrap: wrap;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.Nav-DropDown{
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+
+.Nav-DropDown-Two{
+  animation-name: menuTwo;
+  transition: all 0.5s;
+}
+
+
+.nav-item:hover .arrow-icon-wrap{
+  transition: all 0.33s;
+  transform: scale(1, -1);
+}
+
+.Nav-DropDown-Wrap>div{
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Nav-DropDown-Wrap>div:hover{
+  text-decoration: underline;
+}
+
+.classs{
+  background-color: red;
+}
+.class{
+  background-color: teal;
+}
+
+
+
+
+
+
+
+
+
+@keyframes cf3FadeInOut {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 300px;
+  }
+}
+
+@keyframes menuTwo {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+
+
+
+@media (max-width: 1300px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 880px) {
+  .nav-menu-wrap {
+    display: none;
+
+  }
+  .icon-menu-wrap{
+    display: block;
+  }
+  .header-wrap{
+    width: 95%;
+    min-height: 49px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

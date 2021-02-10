@@ -13,14 +13,14 @@
       <div [className]="'nav-item-wrap'">
         <div [className]="'nav-item'">Блог</div>
       </div>
-      <div [className]="'nav-item-wrap'" (mouseenter)="mouseEnter()" (mouseleave)="mouseEnter()">
+      <div [className]="'nav-item-wrap'" (mouseenter)=expand() (mouseleave)=expand()>
         <div [className]="'nav-item'">
           <div>Послуги</div>
           <div [className]="'arrow-icon-wrap'">
             <fa-icon [icon]="faChevronDown"></fa-icon>
           </div>
         </div>
-        <div *ngIf="menuServiceOpen" [ngClass]="{'Nav-DropDown': 'true','Nav-DropDown-Style': 'true'}">
+        <div *ngIf="isExpanded" [@navFirst] [className]="'Nav-DropDown-Style'" style="height: 300px">
           <div  [className]="'Nav-DropDown-Wrap'">
             <div>GPS моніторинг</div>
             <div>Контроль спецтехніки</div>
@@ -38,14 +38,14 @@
       <div [className]="'nav-item-wrap'">
         <div [className]="'nav-item'">Окупність</div>
       </div>
-      <div [className]="'nav-item-wrap'" (mouseenter)="mouseEnterAbout()" (mouseleave)="mouseEnterAbout()">
+      <div [className]="'nav-item-wrap'" (mouseenter)="expandSecond()" (mouseleave)="expandSecond()">
         <div [className]="'nav-item'">
           <div>Про компанію </div>
           <div [className]="'arrow-icon-wrap'">
             <fa-icon [icon]="faChevronDown"></fa-icon>
           </div>
         </div>
-        <div *ngIf="menuAboutOpen" [ngClass]="{'Nav-DropDown-Two': 'true','Nav-DropDown-Style': 'true'}">
+        <div *ngIf="isExpandedSecond" [@navFirst] [className]="'Nav-DropDown-Style'" style="height: 130px">
           <div  [className]="'Nav-DropDown-Wrap'">
             <div>Партнери</div>
             <div>Наша Команда</div>

@@ -15,7 +15,7 @@
   background-position: center;
 }
 .main-track{
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
   max-height: 600px;
   padding: 100px 20px 0 30px;
   color: #ffffff;
@@ -150,9 +150,6 @@ li{
   padding: 7px;
 }
 
-@keyframes menuBar {
-
-}
 
 
 
@@ -217,7 +214,7 @@ li{
   .service-nav-dropdown-wrap:hover{
     height: 200px;
   }
-  .service-nav-dropdown-wrap>div{
+  .service-nav-dropdown-wrap>div, .service-nav-dropdown-wrap-two>div{
     font-size: 10px;
   }
 }

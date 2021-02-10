@@ -7,6 +7,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HeaderComponent} from './components/header/header.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {SidebarModule} from 'ng-sidebar';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     FontAwesomeModule,
-    SidebarModule
+    SidebarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
